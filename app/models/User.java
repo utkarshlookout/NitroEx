@@ -6,17 +6,15 @@ import javax.persistence.*;
 import play.db.jpa.*;
 
 @Entity
-@Table(name="nitroex_user")
+@Table(name="nitro_users")
 public class User extends Model {
 
     public String email;
     public String password;
-    public boolean isAdmin;
 
-    public User(String email, String password, boolean isAdmin) {
+    public User(String email, String password) {
         this.email = email;
         this.password = password;
-        this.isAdmin = isAdmin;
     }
-
+    
 }

@@ -3,7 +3,16 @@
 # ~~~~
 
 # Home page
-GET	     /                                      Application.homepage
+*	    /                                       module:secure
+
+# Home page
+GET	    /                                       Application.homepage
+
+# Home page
+GET		/index                                       Application.index
+
+# Sign up
+GET		/signup									Application.signup
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

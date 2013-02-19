@@ -92,7 +92,7 @@ public class Secure extends Controller {
 
         }
         // Redirect to the original URL (or /)
-        redirectToOriginalURL();
+        redirectToLoggedInURL();
     }
 
     public static void logout() throws Throwable {
@@ -112,6 +112,12 @@ public class Secure extends Controller {
         if(url == null) {
             url = Play.ctxPath + "/";
         }
+        redirect(url);
+    }
+    
+    static void redirectToLoggedInURL() throws Throwable {
+        Security.invoke("onAuthenticated");
+        String url = Play.ctxPath + "/index";
         redirect(url);
     }
 

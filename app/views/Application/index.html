@@ -1,5 +1,8 @@
 <h1>Please Upload a Text File:</h1> 
 <form action="@{Application.uploadFile()}" method="GET" enctype="multipart/form-data">
-    <input type="file" name="txtfile"/> 
+    <input type="file" name="txtfile"/> <br>
     <input type="submit" value="Upload" />
+</form> <br><br><br>
+<form action="@{Secure.logout()}" method="GET"> 
+    <input type="submit" value="Logout" />
 </form> 
