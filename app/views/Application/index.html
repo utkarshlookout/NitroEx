@@ -1,7 +1,5 @@
-#{extends 'main.html' /}
-#{set title:'Home' /}
-<form action="@{Application.sayHello()}" method="GET">
-    <input type="text" name="myName" /> 
-    <input type="submit" value="Say hello!" />
+<h1>Please Upload a Text File:</h1> 
+<form action="@{Application.uploadFile()}" method="GET" enctype="multipart/form-data">
+    <input type="file" name="txtfile"/> 
+    <input type="submit" value="Upload" />
 </form> 
-#{welcome /}

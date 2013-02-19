@@ -13,8 +13,9 @@ public class Application extends Controller {
         render();
     }
     
-    public static void sayHello(String myName) {
-        render(myName);
+    public static void uploadFile(String myName) {
+    	System.out.println("myName variable : "+myName);
+        //render(myName);
     }
 
 }
