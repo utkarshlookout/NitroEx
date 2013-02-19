@@ -13,13 +13,15 @@ public class Application extends Controller {
         render();
     }
     
-    public static void uploadFile(String myName) {
-    	System.out.println("myName variable : "+myName);
-        //render(myName);
+    public static void signUp()	{
+    	
     }
     
-    public static void users() {
-        List<User> users = User.findAll();
-        renderJSON(users);
+    public static void uploadFile() {
+        render();
+    }
+    
+    public static void homepage()	{
+    	render();
     }
 }
