@@ -1,0 +1,8 @@
+User(bob):
+  email: bob@gmail.com
+  password: bob
+  isAdmin: false
+User(joe):
+  email: joe@gmail.com
+  password: joe 
+  isAdmin: false

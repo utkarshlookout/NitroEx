@@ -17,5 +17,9 @@ public class Application extends Controller {
     	System.out.println("myName variable : "+myName);
         //render(myName);
     }
-
+    
+    public static void users() {
+        List<User> users = User.findAll();
+        renderJSON(users);
+    }
 }

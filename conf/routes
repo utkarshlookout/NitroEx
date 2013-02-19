@@ -11,6 +11,9 @@ GET     /                                       Application.index
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
+# New route to users method
+GET     /users                                  Application.users
+
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 
